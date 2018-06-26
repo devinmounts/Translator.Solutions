@@ -5,15 +5,36 @@ namespace Translator
     public class LeetSpeak
     {
 
-        public bool ToLeetSpeak(string characters)
+        public string ToLeetSpeak(string characters)
         {
+            
             char[] array = characters.ToCharArray();
-            if (Array.IndexOf(array, 'e') == -1)
+            int index = 0;
+            foreach (char letter in array)
             {
-                return false;
+                if (Array.IndexOf(array, 'e') >= 0)
+                {
+                    array[(Array.IndexOf(array, 'e'))] = '3';
+                }
+                if (Array.IndexOf(array, 'o') >= 0)
+                {
+                    array[(Array.IndexOf(array, 'o'))] = '0';
+                }
+                if (Array.IndexOf(array, 'I') >= 0)
+                {
+                    array[(Array.IndexOf(array, 'I'))] = '1';
+                }
+                if (Array.IndexOf(array, 't') >= 0)
+                {
+                    array[Array.IndexOf(array, 't')] = '7';
+                }
+                if (index != 0 && letter == 's')
+                {
+                    array[index] = 'z';
+                }
+                index++;
             }
-            return true;
-
+            return string.Join("", array); 
         } 
 
 
