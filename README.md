@@ -17,7 +17,6 @@ A program that will translate English into LeetSpeak.
 | **Program changes the capital letter "I" to 1**| Input: "I" | Output: "1" |
 | **Program changes the letter "t" to 7**| Input: "t" | Output: "7" |
 | **Program changes the letter "s" to z**| Input: "s" | Output: "z" |
-| **Program changes the capital letter "I" to 1**| Input: "I" | Output: "1" |
 | **Program changes all letters in a word that apply to Leet Speak rules**| Input: "Leet" | Output: "L337" |
 | **Program does not change any instance of "s" at the beginning of a word**| Input: "sessions" | Output: "s3zzi0nz" |
 
